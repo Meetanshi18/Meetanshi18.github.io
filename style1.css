@@ -1,0 +1,157 @@
+/* COLORS
+
+#E2E0DE (Primary light grey)
+#125E8A (Primary blue)
+#1C95DB (Light blue)
+#2B3D41 (Dark Grey)
+#FCFCFC (Whitish)
+#5D737E (Purplish Grey)
+
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/*to change the font accourding to the screen size*/
+html {
+    font-size: 62.5%
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items : center; /*vertically center*/
+}
+.header--logo{    
+    flex-grow: 2;
+    font-size: 3rem;
+    font-weight : lighter;
+    height: auto;
+    padding: 2rem;
+    letter-spacing: 0.5rem;
+}
+.header--signup, .header--login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    font-size: 1.5rem;
+}
+
+/* main--about */
+.main--about{
+    background: #E2E0DE;
+    padding : 1.5rem;
+}
+.main--about--heading{
+    font-size : 3rem;
+    display: flex;
+    justify-content: center;
+    
+}
+.main--about--content{
+    font-size : 2rem;
+    
+}
+
+/* main--features */
+
+.main--features--heading{
+    
+    display: flex;
+    justify-content: center;
+    font-size : 2.5rem;
+    height : 10rem;
+    align-items: center;
+}
+.main--features--heading span{
+    position: relative;
+}
+.main--features--heading span:before{
+    content : "";
+    position: absolute;
+    width : 100%;
+    border-top : 1px solid black;
+    border-bottom : 1px solid black;
+    height: 10%;
+    left: -110%;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.main--features--heading span:after{
+    content : "";
+    position: absolute;
+    width : 100%;
+    border-top : 1px solid black;
+    border-bottom : 1px solid black;
+    height: 10%;
+    right: -110%;
+    top:50%;
+    transform: translateY(-50%);
+}
+.main--features--content{
+    margin-right : 5rem;
+    margin-left : 5rem;
+    margin-bottom : 5rem;
+    background-image:url("FeaturesBackground.png");
+    
+    background-position: top;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap : 1rem;
+    justify-content: center;
+    height: 25rem;
+    align-items: center;
+}
+.main--features--content--featurebox{
+    background: #1C95DB;
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    margin : 1rem;
+    padding : 2rem;
+    font-size : 1.5rem;
+    height : 15rem;
+
+}
+
+.main--features--content--featurebox:hover{
+    background: #125E8A;
+}
+
+.main--signup-login{
+    display : flex;
+    flex-flow: row;
+    justify-content: center;
+    
+    
+}
+.main--signup-login > div{
+    width : 100%;
+    border : 1px solid black;
+
+}
+.main--signup{
+    display : flex;
+    flex-flow: column;
+}
+.main--signup--heading , .main--login--heading{
+    font-size : 2rem;
+    display: flex;
+    justify-content: center;
+}
+.abc{
+    display: flex;
+    justify-content: center;
+    
+}
+.abc input{
+    display: flex;
+    justify-content: center;
+}
