@@ -40,6 +40,11 @@ header{
     justify-content: center;
     width: 10rem;
     font-size: 1.5rem;
+    padding : 2rem;
+}
+.header--signup:hover, .header--login:hover{
+    background: #125E8A;
+    color : white;
 }
 
 /* main--about */
@@ -65,7 +70,7 @@ header{
     display: flex;
     justify-content: center;
     font-size : 2.5rem;
-    height : 10rem;
+    padding : 2rem;
     align-items: center;
 }
 .main--features--heading span{
@@ -95,8 +100,7 @@ header{
     transform: translateY(-50%);
 }
 .main--features--content{
-    margin-right : 5rem;
-    margin-left : 5rem;
+    
     margin-bottom : 5rem;
     background-image:url("FeaturesBackground.png");
     
@@ -129,7 +133,7 @@ header{
     display : flex;
     flex-flow: row;
     justify-content: center;
-    
+    margin-bottom: 5rem;
     
 }
 .main--signup-login > div{
@@ -146,12 +150,38 @@ header{
     display: flex;
     justify-content: center;
 }
-.abc{
+.main--signup--form{
     display: flex;
     justify-content: center;
     
 }
-.abc input{
+.main--signup--form input{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    background: black;
+    color : white;
+    font-weight: 200;
+}
+.footer--heading{
+    display: flex;
+    justify-content: center;
+    font-size : 2rem;
+    padding : 2rem;
+}
+.footer--contactdetails{
+    display: flex;
+    flex-flow: row;
+    justify-content:center; 
+    font-size : 1.5rem;
+    
+}
+.footer--contactdetails li{
+    padding : 0.75rem;
+}
+.submit--feedbackBtn{
     display: flex;
     justify-content: center;
 }
